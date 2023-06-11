@@ -10,7 +10,7 @@ public class PullUpTest {
 	public void test1() {
 		Vehiculo calcula = new Coche();
 		String expected = "Brummm, brummm";
-		String actual = ((Coche) calcula).arrancar();
+		String actual = ((Vehiculo) calcula).arrancar();
 
 		assertEquals("Arrancar el coche :", actual, expected);
 	}
@@ -19,7 +19,7 @@ public class PullUpTest {
 	public void test2() {
 		Vehiculo calcula = new Moto();
 		String expected = "Brummm, brummm";
-		String actual = ((Moto) calcula).arrancar();
+		String actual = ((Vehiculo) calcula).arrancar();
 
 		assertEquals("Arrancar la moto :", actual, expected);
 	}
